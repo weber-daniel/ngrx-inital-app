@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bgLogin_1 {
+  width: 100%;
+  height: 100vh;
+  background: #fff url("assets/images/app_bg1.jpeg") center center/cover no-repeat fixed;
+}
+
+.bgLogin_2 {
+  width: 100%;
+  height: 100vh;
+  background: #fff url("assets/images/app_bg2.jpeg") center center/cover no-repeat fixed;
+}
+
+.bgLogin_3 {
+  width: 100%;
+  height: 100vh;
+  background: #fff url("assets/images/app_bg3.jpeg") center center/cover no-repeat fixed;
+}
+
+.bgLogin_4 {
+  width: 100%;
+  height: 100vh;
+  background: #fff url("assets/images/app_bg4.jpeg") center center/cover no-repeat fixed;
+}
+
+.bgLogin_5 {
+  width: 100%;
+  height: 100vh;
+  background: #fff url("assets/images/app_bg5.jpeg") center center/cover no-repeat fixed;
+}
+
+

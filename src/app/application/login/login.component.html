@@ -1,0 +1,24 @@
+<div class="login-wrapper d-flex justify-content-center align-items-center" [ngClass]="bgClass">
+
+  <form [formGroup]="loginForm" (submit)="onLogin()">
+
+    <div class="form-group">
+      <label for="exampleInputEmail1">E-Mail Address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1"
+             formControlName="email" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">User Password</label>
+      <input type="password" class="form-control" formControlName="password"
+             id="exampleInputPassword1" placeholder="User Password">
+    </div>
+    <div class="text-right">
+      <button type="reset" class="btn btn-outline-warning mr-3" (click)="onReset()">Reset Form</button>
+      <button type="submit" class="btn btn-outline-primary" [disabled]="loginForm.invalid">Login User</button>
+    </div>
+
+  </form>
+
+</div>
+
