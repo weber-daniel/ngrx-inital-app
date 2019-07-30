@@ -7,6 +7,9 @@ import { LoginComponent } from './application/login/login.component';
 import { DashboardComponent } from './application/dashboard/dashboard.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {StoreModule} from '@ngrx/store';
+import {AuthModule} from './state/auth.module';
+import {metaReducers, reducers} from './reducers';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot(reducers, { metaReducers }),
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

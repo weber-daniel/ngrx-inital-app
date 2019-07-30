@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "store-ngrx-testing"
+  "defaultProject": "store-ngrx-testing",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
